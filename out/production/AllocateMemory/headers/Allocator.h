@@ -23,6 +23,62 @@ JNIEXPORT jint JNICALL Java_Allocator_allocateInt
 JNIEXPORT jint JNICALL Java_Allocator_getAllocatedInt
   (JNIEnv *, jobject, jint);
 
+/*
+ * Class:     Allocator
+ * Method:    editAllocatedInt
+ * Signature: (II)I
+ */
+JNIEXPORT jint JNICALL Java_Allocator_editAllocatedInt
+  (JNIEnv *, jobject, jint, jint);
+
+/*
+ * Class:     Allocator
+ * Method:    atomicAllocateInt
+ * Signature: (II)I
+ */
+JNIEXPORT jint JNICALL Java_Allocator_atomicAllocateInt
+  (JNIEnv *, jobject, jint, jint);
+
+/*
+ * Class:     Allocator
+ * Method:    atomicGetAllocatedInt
+ * Signature: (I)I
+ */
+JNIEXPORT jint JNICALL Java_Allocator_atomicGetAllocatedInt
+  (JNIEnv *, jobject, jint);
+
+/*
+ * Class:     Allocator
+ * Method:    atomicEditAllocatedInt
+ * Signature: (II)I
+ */
+JNIEXPORT jint JNICALL Java_Allocator_atomicEditAllocatedInt
+  (JNIEnv *, jobject, jint, jint);
+
+/*
+ * Class:     Allocator
+ * Method:    allocateBoolean
+ * Signature: (IZ)Z
+ */
+JNIEXPORT jboolean JNICALL Java_Allocator_allocateBoolean
+  (JNIEnv *, jobject, jint, jboolean);
+
+/*
+ * Class:     Allocator
+ * Method:    getAllocatedBoolean
+ * Signature: (I)Z
+ */
+JNIEXPORT jboolean JNICALL Java_Allocator_getAllocatedBoolean
+  (JNIEnv *, jobject, jint);
+
+/*
+ * Class:     Allocator
+ * Method:    editAllocatedBoolean
+ * Signature: (IZ)Z
+ */
+JNIEXPORT jboolean JNICALL Java_Allocator_editAllocatedBoolean
+  (JNIEnv *, jobject, jint, jboolean);
+
 #ifdef __cplusplus
 }
 #endif

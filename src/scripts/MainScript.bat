@@ -14,5 +14,4 @@ ml64 /c /Fo"asm\asm64.obj" asm\asm64.asm
 
 echo Linking
 gcc -shared -o nativeLibC.dll objects\Allocator.o asm\asm64.obj -Wl,--add-stdcall-alias
-
 pause
